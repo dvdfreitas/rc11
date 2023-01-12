@@ -57,3 +57,47 @@ Route::get('/', function () {
 ```
 <script src="https://cdn.tailwindcss.com"></script>
 ```
+
+# Seeder
+
+É muito importante para testar um site que ele tenha informação 
+
+DatabaseSeeder.php
+
+\App\Models\User::factory(100)->create();
+
+# Factories
+
+Uma das 
+
+# Criação de um modelo
+
+```
+php artisan make:model Story -mcfs
+```
+
+## Alterar a migração
+
+No ficheiro :
+
+```
+Schema::create('stories', function (Blueprint $table) {
+    $table->id();
+    $table->string('title');
+    $table->string('image')->nullable();
+    $table->text('description');
+    $table->timestamps();
+});
+```
+
+Para executar o migração e alterar a BD, vou fazer:
+
+```
+php artisan migrate
+```
+
+É possível voltar atrás com:
+
+```
+php artisan migrate:rollback
+```
