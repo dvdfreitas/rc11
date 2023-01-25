@@ -101,3 +101,11 @@ php artisan migrate
 ```
 php artisan migrate:rollback
 ```
+
+# Estudantes
+
+```
+php artisan make:model Student -mcfs
+```
+
+2023_01_25_152849_create_students_table

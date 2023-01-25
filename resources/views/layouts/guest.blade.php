@@ -15,6 +15,8 @@
             <div><a href="">Contactos</a></div>
             <div class="hidden xl:inline">|</div>
         </div>
-        {{ $slot }}
+        <div class="w-full">
+            {{ $slot }}
+        </div>
     </body>
 </html>

@@ -1,7 +1,9 @@
 <?php
 
 use App\Models\Story;
+use App\Models\Student;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +36,22 @@ Route::get('/users', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/students', function () {
+    $students = Student::all();    
+    return view('students.index', [
+        'students' => $students
+    ]);
+});
+
+Route::get('/students/create', function () {
+    return view('students.create');
+});
+
+Route::post('/students/store', function (Request $request) {
+    dd($request);
+});
+
 
 Route::get('/sexta-feira', function () {
     $users = User::all();    
