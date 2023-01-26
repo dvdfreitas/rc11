@@ -109,3 +109,7 @@ php artisan make:model Student -mcfs
 ```
 
 2023_01_25_152849_create_students_table
+
+# Erros
+
+## Add [id] to fillable property to allow mass assignment on [App\Models\Student]

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->date('birthdate')->nullable();
+            $table->boolean('admin')->default(false);
             $table->timestamps();
         });
     }

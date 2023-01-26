@@ -49,7 +49,15 @@ Route::get('/students/create', function () {
 });
 
 Route::post('/students/store', function (Request $request) {
-    dd($request);
+    
+    Student::create([
+        'id' => $request['id'],
+        'name' => $request['name'],
+        'email' => $request['email'],
+        'birthdate' => $request['birthdate'],
+        'admin' => $request['admin'],
+    ]);
+    return redirect('/students');
 });
 
 

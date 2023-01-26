@@ -15,6 +15,8 @@ class StudentSeeder extends Seeder
      */
     public function run()
     {
+        //DB::table('students')->truncate();
+
         DB::table('students')->insert([
             'id' => 113667,
             'name' => 'Tiago Vilela',
@@ -25,6 +27,12 @@ class StudentSeeder extends Seeder
             'id' => 111615,
             'name' => 'Rafael Silva',
             'email' => 'a111615@aeg1.pt'
+        ]);
+
+        DB::table('students')->insert([
+            'id' => 113848,
+            'name' => 'Tomás Gondar',
+            'email' => 'a113848@aeg1.pt'
         ]);
     }
 }
