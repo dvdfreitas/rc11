@@ -15,6 +15,7 @@ composer require laravel/jetstream
 ```
 
 Com livewire:
+# Instalação
 
 ```
 php artisan jetstream:install livewire
