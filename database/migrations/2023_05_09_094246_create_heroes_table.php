@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('image');
+            $table->string('image_vertical')->nullable();
             $table->text('description')->nullable();
             $table->date('expiration_date')->nullable();
             $table->boolean('visible')->default(true);

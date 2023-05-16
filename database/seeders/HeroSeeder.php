@@ -24,6 +24,7 @@ class HeroSeeder extends Seeder
         DB::table('heroes')->insert([
             'title' => 'Zaidu',
             'image' => 'zaidu.jpeg',
+            'image_vertical' => 'zaidu-vertical.jpeg',
         ]);
 
         DB::table('heroes')->insert([
