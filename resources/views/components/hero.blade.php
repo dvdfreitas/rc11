@@ -1,7 +1,7 @@
 <div>
     @foreach ($heroes as $hero)
         @if ($hero->image_vertical)
-            <img style="display: none" id="img_{{ $loop->index }}" class="w-full h-[800px] object-cover" src="/img/heroes/{{ $hero->image_vertical }}"/>
+            <img style="display: none " id="img_{{ $loop->index }}" class="w-full h-[800px] object-cover" src="/img/heroes/{{ $hero->image_vertical }}"/>
         @else
             <img style="display: none" id="img_{{ $loop->index }}" class="w-full h-[800px] object-cover" src="/img/heroes/{{ $hero->image }}"/>
         @endif
